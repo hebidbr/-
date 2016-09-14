@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+ul.ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+#wrap{
+    height: 90%;
+}
+#footer{
+    height: 10%;
+    background: #ccc;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#footer li{
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    padding: .2rem 0
+}
+#footer li span{
+    display: block;
+    font-size: 1.2rem;
+}
+#footer li a{
+    font-size: .8rem;
+}

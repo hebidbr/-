@@ -1,0 +1,33 @@
+define(['backbone'],function(backbone){
+    var Rounter = Backbone.Router.extend({
+        routes:{
+            'home':'homefc',
+            'happy':'happyfc',
+            'share':'sharefc',
+            'me':'mefc'
+        },
+        homefc:function(){
+            require(['conpoent/home/home.js','swiper'],function(a){
+                a.res();
+                a.create();
+            })
+        },
+        happyfc:function(){
+            require(['conpoent/happy/happy.js'],function(a){
+                a.res();
+            })
+        },
+        sharefc:function(){
+            require(['conpoent/share/share.js'],function(a){
+                a.res();
+            })
+        },
+        mefc:function(){
+            require(['conpoent/me/me.js'],function(a){
+                a.res();
+            })
+        }
+    });
+    var router = new Rounter();
+    backbone.history.start();
+})

@@ -1,0 +1,19 @@
+.swiper-container{
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+.swiper-wrapper{
+    width: 100%;
+    height：100%;
+}
+.swiper-slide{
+    width: 100%;
+    height：100%;
+   left: -240px;
+    top:-80px;
+}
+.swiper-wrapper img{
+    width: 100%;
+    height: 90%;
+}
