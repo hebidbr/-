@@ -4,13 +4,10 @@
 }
 html,body{
     height:100%;
-    width: 100%;
+    width: 16rem;
 }
-ul.ol,li{
+ul,ol,li{
     list-style: none;
-}
-a{
-    text-decoration: none;
 }
 @font-face {
     font-family: 'iconfont';
@@ -28,13 +25,15 @@ a{
     -moz-osx-font-smoothing: grayscale;
 }
 #wrap{
+    width: 100%;
+    overflow-x:hidden;
     height: 90%;
 }
 #footer{
     height: 10%;
-    background: #ccc;
+    background: #fff;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 #footer li{
@@ -46,8 +45,10 @@ a{
 }
 #footer li span{
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 #footer li a{
     font-size: .8rem;
+    color: #666;
+    text-decoration: none;
 }

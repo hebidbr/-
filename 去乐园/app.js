@@ -11,9 +11,9 @@ require.config({
         luyou:'luyou',
         css:'js/css',
         swiper:'js/swiper-3.3.1.jquery.min',
-        baiduTemplates:'js/baiduTemplate'
+        baiduTemplates:'js/baiduTemplate',
     }
 })
 require(['jquery','luyou','baiduTemplates'],function(res){
-    console.log(baidu.template);
+    // console.log(baidu.template);
 })

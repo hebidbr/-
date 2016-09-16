@@ -1,27 +1,36 @@
 
-<div class="swiper-container">
-
-　　<div class="swiper-wrapper">
-
-　　　　<!-- <div class="swiper-slide"><img src=""></div>
-
-　　　　<div class="swiper-slide"><img src=""></div>
-
-　　　　<div class="swiper-slide"><img src=""></div> -->
-
-　　</div>
-
-　　<!-- 如果需要分页器 -->
-
-　　<div class="swiper-pagination"></div>
-
-　　<!-- 如果需要导航按钮 --> <div class="swiper-button-prev"></div>
-
-　　<div class="swiper-button-next"></div>
-
-　　<!-- 如果需要滚动条 -->
-
-　　<div class="swiper-scrollbar"></div>
-
+<div id="swiper">
+    <!-- 此处引入第一个模板 -->
 </div>
-
+<!-- 模板1 -->
+<script type="text/html" id="model1">
+    <div class="swiper-container">
+    　　<div class="swiper-wrapper">
+            <%for(var i=0;i<list.length;i++){%>
+                <div class="swiper-slide"><img src="<%=list[i].img%>"></div>
+            <%}%>  
+    　　</div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+</script>
+<div id="nav2">
+    
+</div>
+<!-- 模板2 -->
+<script type="text/html" id="model2">
+     <%for(var i=0;i<list.length;i++){%>
+         <img src="<%=list[i].img%>">
+     <%}%>  
+</script>
+<div id="text">
+    <h2>精彩推荐</h2>
+</div>
+<div id="list">
+    
+</div>
+<script type="text/html" id="model3">
+    <%for(var i=0;i<list.length;i++){%>
+         <img src="<%=list[i].img%>">
+    <%}%>
+</script>

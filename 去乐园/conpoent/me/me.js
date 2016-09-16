@@ -1,4 +1,4 @@
-define(['text!conpoent/me/me.html'],function(content){
+define(['text!conpoent/me/me.html','css!conpoent/me/me.css'],function(content){
     function res(){
         $('#wrap').html(content);
     }

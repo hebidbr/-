@@ -1,1 +1,20 @@
-<!-- <h1>happy</h1> -->
+<ul id="top">
+    <li>分类</li>
+    <li>全城</li>
+    <li>首页</li>
+</ul>
+<div id="list2"></div>
+<script type="text/html" id="model1">
+    <%for(var i=0;i<list.length;i++){%>
+        <div id="list_div">
+            <p><%=list[i].name%></p>
+            <p><%=list[i].address%></p>
+            <div id="list_span">
+                <span class="font">&#xe600;</span>
+                <span><%=list[i].dist%>公里</span>
+            </div>
+            <img src="<%=list[i].img%>">  
+        </div>
+        
+    <%}%>
+</script>

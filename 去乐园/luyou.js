@@ -15,6 +15,7 @@ define(['backbone'],function(backbone){
         happyfc:function(){
             require(['conpoent/happy/happy.js'],function(a){
                 a.res();
+                a.create();
             })
         },
         sharefc:function(){
